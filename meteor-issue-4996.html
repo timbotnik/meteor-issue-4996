@@ -1,0 +1,18 @@
+<head>
+  <title>meteor-issue-4996</title>
+</head>
+<body>
+  {{> repro}}
+</body>
+
+<template name="repro">
+  <h1>meteor-issue-4996 repro</h1>
+
+  <p>I'd like to udpate this list using 'cursor.observe'</p>
+  <ul>
+  {{#each sortedData}}
+    <li>{{value}}</li>
+  {{/each}}
+  </ul>
+
+</template>
